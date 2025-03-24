@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: g-52-shop
+  datasource:
+    url: jdbc:mysql://localhost:3306/g_52_shop
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Qwerty12345
+  liquibase:
+    change-log: classpath:db/changelog/changelog-master.xml
+  mail:
+    username: elenakarsten.ait@gmail.com
+    password: nvcuaulzbulmdzvy
+    host: smtp.gmail.com
+    port: 587
+    properties:
+      mail:
+        debug: true
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          ssl:
+            protocols: TLSv1.2
+            trust: smtp.gmail.com
+
+key:
+  access: PmeJIM3j25UnYkWVhLVSTN5pPJCp6MV9sDiwS78F3Pk=
+  refresh: vkAHeVVdv32EOxWH0lZykAq4KiYeKYBPlL8Trz9bhxE=
+
+logging:
+  file:
+    name: logs/log.log
+  level:
+    root: info
+
+messages:
+  hello: Hello from local application!
